@@ -10,10 +10,13 @@
         "use strict"
         
 
-        let universe = ["Mars", "Saturn", "Uranus"];
-        universe.push("Neptune", "Pluto");
-        universe.unshift("Mercury", "Venus", "Earth", "Earth's Moon");
-        console.log(universe);
+        let planets = ["Mars", "Saturn", "Uranus"];
+        planets.push("Neptune", "Pluto");
+        planets.unshift("Mercury", "Venus", "Earth", "Earth's Moon");
+        console.log(planets);                     // ["Mercury", "Venus", "Earth", "Earth's Moon", "Mars", "Saturn", "Uranus", "Neptune", "Pluto"]
+        planets.splice(5, 0, "Jupiter");
+        console.log(planets);
+        
 
     </script>
 </body>
