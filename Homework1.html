@@ -13,9 +13,13 @@
         let planets = ["Mars", "Saturn", "Uranus"];
         planets.push("Neptune", "Pluto");
         planets.unshift("Mercury", "Venus", "Earth", "Earth's Moon");
-        console.log(planets);                     // ["Mercury", "Venus", "Earth", "Earth's Moon", "Mars", "Saturn", "Uranus", "Neptune", "Pluto"]
+        console.log(planets);                     // ["Mercury", "Venus", "Earth", "Earth's Moon", "Mars", "Saturn", "Uranus", "Neptune", "Pluto"] = 9
         planets.splice(5, 0, "Jupiter");
+        console.log(planets);                     // ["Mercury", "Venus", "Earth", "Earth's Moon", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune", "Pluto"] = 10
+        planets.splice(3,1)
+        planets.pop()
         console.log(planets);
+        
         
 
     </script>
