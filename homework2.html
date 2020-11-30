@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        "use strict"
+
+        let names = [];
+        let newnames = 0;
+        
+        while (true) {
+            newnames = prompt("Add a name");
+            names[names.length] = newnames;
+            
+            if (newnames == " " || newnames == null)
+            break;
+        }
+        
+        let sorted;
+
+            names.pop();
+            console.log (names);
+
+        for (let i = 0; i < names.length - 1; i++) {
+            if (names[i] < names[i+1]) {
+                sorted = "Sorted!";
+            } else {
+                sorted = "Not Sorted!";
+            }
+        }
+        
+            alert(sorted)
+    </script>
+</body>
+</html>
